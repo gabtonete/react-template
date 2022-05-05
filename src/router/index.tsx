@@ -1,7 +1,6 @@
-import * as React from "react";
-import { Router } from "./router";
-import { SignIn } from "./screens/signin";
-import { SignUp } from "./screens/signup";
+import React from "react";
+import { SignIn } from "../screens/signin";
+import { SignUp } from "../screens/signup";
 import {
   BrowserRouter,
   Routes,
@@ -9,7 +8,7 @@ import {
   Link
 } from "react-router-dom";
 
-export default function App() {
+export const Router = () => {
   return (
     <BrowserRouter>
         <Routes>
@@ -18,4 +17,4 @@ export default function App() {
         </Routes>
     </BrowserRouter>
   );
-}
+};
