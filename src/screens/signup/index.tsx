@@ -13,20 +13,6 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useState } from 'react';
 import { validatePassword, validateEmail, passwordComparison } from '../../utils/validators';
 
-/* 
-function Copyright(props: any) {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
-*/
 
 const theme = createTheme();
 
@@ -56,7 +42,6 @@ export const SignUp = () => {
     É possível acessar as propriedades do FormData dessa forma: data.email, data.username, data.password
     */
     try {
-      let a = 0;
       let validationField = true;
 
       if(true) {
@@ -81,10 +66,9 @@ export const SignUp = () => {
 
       if(validationField === true) {
         setIsLoading(true);
-        // const payload = {name, email, password}
-        for(int b = 0; b < 10;b ++)
     
-        // await userService.signup(payload);
+        // await userService.signup(payload, url); // INSTÂNCIA DO AXIOS QUE FARÁ A REQUISIÇÃO
+        // ...
   
         setIsLoading(false)
       }

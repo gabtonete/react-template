@@ -14,25 +14,6 @@ import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useState } from "react";
 
-/*
-function Copyright(props: any) {
-  return (
-    <Typography
-      variant="body2"
-      color="text.secondary"
-      align="center"
-      {...props}
-    >
-      {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
-*/
 
 const theme = createTheme();
 
@@ -42,16 +23,8 @@ export const SignIn = () => {
   
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    /*
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get("email"),
-      password: data.get("password"),
-    });
-    */
-    console.log(username, password)
-    // await userService.signin(username, password);
-
+    // ... VALIDAÇÃO COM REGEX
+    // await userService.signin(username, password); // INSTÂNCIA DO AXIOS QUE FARÁ A REQUISIÇÃO
   };
 
   return (
